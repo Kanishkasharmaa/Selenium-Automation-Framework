@@ -1,0 +1,74 @@
+2026-04-20 23:07:29 [main] INFO  BaseClass - config.properties file is loaded
+2026-04-20 23:08:06 [main] INFO  BaseClass - Chrome Driver Instance is created
+2026-04-20 23:08:13 [main] INFO  BaseClass - Web browser initialized and browser maximized
+2026-04-20 23:08:13 [main] TRACE BaseClass - This is a Trace Message
+2026-04-20 23:08:13 [main] DEBUG BaseClass - This is a Debug Message
+2026-04-20 23:08:13 [main] WARN  BaseClass - This a warn message
+2026-04-20 23:08:13 [main] INFO  BaseClass - Action driver is created
+2026-04-20 23:08:15 [main] INFO  BaseClass - Web driver is closed
+2026-04-20 23:08:23 [main] INFO  BaseClass - Chrome Driver Instance is created
+2026-04-20 23:08:32 [main] INFO  BaseClass - Web browser initialized and browser maximized
+2026-04-20 23:08:32 [main] TRACE BaseClass - This is a Trace Message
+2026-04-20 23:08:32 [main] DEBUG BaseClass - This is a Debug Message
+2026-04-20 23:08:32 [main] WARN  BaseClass - This a warn message
+2026-04-20 23:08:32 [main] INFO  BaseClass - Action driver is created
+2026-04-20 23:08:42 [main] INFO  BaseClass - Web driver is closed
+2026-04-20 23:08:47 [main] INFO  BaseClass - Chrome Driver Instance is created
+2026-04-20 23:08:55 [main] INFO  BaseClass - Web browser initialized and browser maximized
+2026-04-20 23:08:55 [main] TRACE BaseClass - This is a Trace Message
+2026-04-20 23:08:55 [main] DEBUG BaseClass - This is a Debug Message
+2026-04-20 23:08:55 [main] WARN  BaseClass - This a warn message
+2026-04-20 23:08:55 [main] INFO  BaseClass - Action driver is created
+2026-04-20 23:08:57 [main] INFO  ActionDriver - Entered textAdmin
+2026-04-20 23:08:57 [main] INFO  ActionDriver - Entered textad
+2026-04-20 23:08:58 [main] INFO  ActionDriver - clicked an element
+2026-04-20 23:09:03 [main] INFO  ActionDriver -  Texts are matching Invalid credentials equals Invalid credentials
+2026-04-20 23:09:04 [main] INFO  BaseClass - Web driver is closed
+2026-04-20 23:09:07 [main] INFO  BaseClass - Chrome Driver Instance is created
+2026-04-20 23:09:14 [main] INFO  BaseClass - Web browser initialized and browser maximized
+2026-04-20 23:09:14 [main] TRACE BaseClass - This is a Trace Message
+2026-04-20 23:09:14 [main] DEBUG BaseClass - This is a Debug Message
+2026-04-20 23:09:14 [main] WARN  BaseClass - This a warn message
+2026-04-20 23:09:14 [main] INFO  BaseClass - Action driver is created
+2026-04-20 23:09:15 [main] INFO  ActionDriver - Entered textAdmin
+2026-04-20 23:09:15 [main] INFO  ActionDriver - Entered textadmin123
+2026-04-20 23:09:15 [main] INFO  ActionDriver - clicked an element
+2026-04-20 23:09:21 [main] INFO  ActionDriver - Element is displayed
+2026-04-20 23:09:52 [main] INFO  ActionDriver - Element is not clickable : Expected condition failed: waiting for element found by By.xpath: //a[text()='Logout'] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Logout']"}.
+(tried for 30 seconds with 500 milliseconds interval)
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\kanishka Sharma\Ap...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59364}, goog:processID: 21200, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59364/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c5d1abaa9f828d21c925359f4193984b
+2026-04-20 23:10:05 [main] INFO  BaseClass - Web driver is closed
+2026-04-20 23:49:51 [main] INFO  BaseClass - config.properties file is loaded
+2026-04-20 23:49:56 [main] INFO  BaseClass - Chrome Driver Instance is created
+2026-04-20 23:50:03 [main] INFO  BaseClass - Web browser initialized and browser maximized
+2026-04-20 23:50:03 [main] TRACE BaseClass - This is a Trace Message
+2026-04-20 23:50:03 [main] DEBUG BaseClass - This is a Debug Message
+2026-04-20 23:50:03 [main] WARN  BaseClass - This a warn message
+2026-04-20 23:50:03 [main] INFO  BaseClass - Action driver is created
+2026-04-20 23:50:03 [main] INFO  ActionDriver - Entered textElement with name  : username Admin
+2026-04-20 23:50:03 [main] INFO  ActionDriver - Entered textElement with name  : password ad
+2026-04-20 23:50:03 [main] INFO  ActionDriver - clicked an elementnull
+2026-04-20 23:50:05 [main] INFO  ActionDriver -  Texts are matching Invalid credentials equals Invalid credentials
+2026-04-20 23:50:06 [main] INFO  BaseClass - Web driver is closed
+2026-04-20 23:50:08 [main] INFO  BaseClass - Chrome Driver Instance is created
+2026-04-20 23:50:13 [main] INFO  BaseClass - Web browser initialized and browser maximized
+2026-04-20 23:50:13 [main] TRACE BaseClass - This is a Trace Message
+2026-04-20 23:50:13 [main] DEBUG BaseClass - This is a Debug Message
+2026-04-20 23:50:13 [main] WARN  BaseClass - This a warn message
+2026-04-20 23:50:13 [main] INFO  BaseClass - Action driver is created
+2026-04-20 23:50:13 [main] INFO  ActionDriver - Entered textElement with name  : username Admin
+2026-04-20 23:50:13 [main] INFO  ActionDriver - Entered textElement with name  : password admin123
+2026-04-20 23:50:14 [main] INFO  ActionDriver - clicked an elementnull
+2026-04-20 23:50:15 [main] INFO  ActionDriver - Element is displayednull
+2026-04-20 23:50:57 [main] INFO  ActionDriver - Element is not clickable : Expected condition failed: waiting for element found by By.xpath: //a[text()='Logout'] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Logout']"}.
+(tried for 30 seconds with 500 milliseconds interval)
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\kanishka Sharma\Ap...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52495}, goog:processID: 19384, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52495/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6b8f16f839e0a7d5be3465f7799631fb
+2026-04-20 23:51:09 [main] INFO  BaseClass - Web driver is closed
