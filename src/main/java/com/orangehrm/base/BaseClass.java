@@ -22,8 +22,10 @@ import java.util.concurrent.locks.LockSupport;
 public class BaseClass {
 
     protected static Properties prop;
-    protected static WebDriver driver;
-    private static ActionDriver actionDriver;
+//    protected static WebDriver driver;
+//    private static ActionDriver actionDriver;
+    private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    private static ThreadLocal<ActionDriver> actionDriver = new ThreadLocal<>();
     public static final Logger logger= LoggerManager.getLogger(BaseClass.class);
     @BeforeSuite
     public void loadConfig() throws IOException {
@@ -35,7 +37,7 @@ public class BaseClass {
     }
 
     @BeforeMethod
-    public void setup() throws IOException {
+    public synchronized void setup() throws IOException {
         System.out.println("Setting up the driver for " + this.getClass().getSimpleName());
         launchBrowser();
         configureBrowser();
@@ -46,25 +48,31 @@ public class BaseClass {
         logger.debug("This is a Debug Message");
         logger.fatal("This is a fatal message");
         logger.warn("This a warn message");
-        //initiallize the action driver only once
-        if(actionDriver==null){
-            actionDriver=new ActionDriver(driver);
-            logger.info("Action driver is created");
+//        //initiallize the action driver only once
+//        if(actionDriver==null){
+//            actionDriver=new ActionDriver(driver);
+//            logger.info("Action driver is created" + Thread.currentThread().getId());
+//
+//        }
+        //Initialize Action Driver for current thread
+        actionDriver.set(new ActionDriver(getDriver()));
+        logger.info("ActionDriver initailized for thread" + Thread.currentThread().getId());
+   }
 
-        }
-    }
-
-    private void launchBrowser(){
+    private synchronized void launchBrowser(){
         //Intialize the browser based on browser defined in config.properties file
         String browser= prop.getProperty("browser");
         if(browser.equalsIgnoreCase("chrome")){
-            driver=new ChromeDriver();
+//            driver=new ChromeDriver();
+            driver.set(new ChromeDriver()); //new changes as per thread
             logger.info("Chrome Driver Instance is created");
         }else if(browser.equalsIgnoreCase("firefox")){
-            driver=new FirefoxDriver();
+//            driver=new FirefoxDriver();
+            driver.set(new FirefoxDriver()); //new changes as per thread
             logger.info("Firefox Driver Instance is created");
         }else if(browser.equalsIgnoreCase("edge")){
-            driver=new EdgeDriver();
+//            driver=new EdgeDriver();
+            driver.set(new EdgeDriver()); //new changes as per thread
         }else{
             throw new IllegalArgumentException("Browser Not Supported");
         }
@@ -74,38 +82,38 @@ public class BaseClass {
     private void configureBrowser(){
         //Implicit Wait
         int implicitWait= Integer.parseInt(prop.getProperty("ImplicitWait"));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitWait));
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitWait));
 
         //maximize the browser
-        driver.manage().window().maximize();
+        getDriver().manage().window().maximize();
 
         //navigate the url
         try {
-            driver.get(prop.getProperty("url"));
+            getDriver().get(prop.getProperty("url"));
         } catch (Exception e) {
             System.out.println("Failed to navigate to url :" + e.getMessage());
         }
     }
    //Driver getter method
     public static WebDriver getDriver(){
-        if (driver == null){
+        if (driver.get() == null){
             System.out.println("Web Driver is not initiallized");
             throw new IllegalStateException("Web Driver is not initiallized");
         }
-        return driver;
+        return driver.get();
     }
 
     //Action Driver getter method
     public static ActionDriver getActionDriver(){
-        if (actionDriver == null){
+        if (actionDriver.get() == null){
             System.out.println("Action Driver is not initiallized");
             throw new IllegalStateException("Action Driver is not initiallized");
         }
-        return actionDriver;
+        return actionDriver.get();
     }
 
     //Driver Setter method
-    public void setDriver(WebDriver driver){
+    public void setDriver(ThreadLocal<WebDriver> driver){
         this.driver=driver;
     }
 
@@ -114,14 +122,14 @@ public class BaseClass {
         return prop;
     }
     @AfterMethod
-    public void tearDown(){
+    public synchronized void tearDown(){
         try {
-            if(driver!=null){
-                driver.quit();
+            if(getDriver()!=null){
+                getDriver().quit();
             }
             logger.info("Web driver is closed");
-            driver=null;
-            actionDriver=null;
+            driver.remove();
+            actionDriver.remove();
         } catch (Exception e) {
             System.out.println("Failed to quit the browser :" + e.getMessage());
         }

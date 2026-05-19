@@ -24,3 +24,87 @@ Command: [6b8f16f839e0a7d5be3465f7799631fb, findElement {using=xpath, value=//a[
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.57 (b4f28b5637d0..., userDataDir: C:\Users\kanishka Sharma\Ap...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52495}, goog:processID: 19384, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52495/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: 6b8f16f839e0a7d5be3465f7799631fb
 2026-04-20 23:51:07 [main] ERROR ActionDriver - Unable to click element
+2026-05-19 01:53:07 [TestNG-test-Test OrangeHRM-2] ERROR BaseClass - This is a Error Message
+2026-05-19 01:53:07 [TestNG-test-Test OrangeHRM-2] FATAL BaseClass - This is a fatal message
+2026-05-19 01:53:14 [TestNG-test-Test OrangeHRM-3] ERROR BaseClass - This is a Error Message
+2026-05-19 01:53:14 [TestNG-test-Test OrangeHRM-3] FATAL BaseClass - This is a fatal message
+2026-05-19 01:53:14 [TestNG-test-Test OrangeHRM-1] ERROR BaseClass - This is a Error Message
+2026-05-19 01:53:14 [TestNG-test-Test OrangeHRM-1] FATAL BaseClass - This is a fatal message
+2026-05-19 01:53:20 [TestNG-test-Test OrangeHRM-3] ERROR ActionDriver - unable to describe the elementRange [0, 50) out of bounds for length 5
+2026-05-19 01:53:35 [TestNG-test-Test OrangeHRM-3] ERROR BaseClass - This is a Error Message
+2026-05-19 01:53:35 [TestNG-test-Test OrangeHRM-3] FATAL BaseClass - This is a fatal message
+2026-05-19 01:53:37 [TestNG-test-Test OrangeHRM-3] ERROR ActionDriver - unable to describe the elementRange [0, 50) out of bounds for length 5
+2026-05-19 01:53:39 [TestNG-test-Test OrangeHRM-3] ERROR ActionDriver - unable to describe the elementRange [0, 50) out of bounds for length 5
+2026-05-19 01:53:49 [TestNG-test-Test OrangeHRM-3] ERROR ActionDriver - unable to describe the elementno such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Logout']"}
+  (Session info: chrome=148.0.7778.168)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ae6e6a4a8cb9a1c64f640bd0a4eb5bda, findElement {using=xpath, value=//a[text()='Logout']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\kanishka Sharma\Ap...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53345}, goog:processID: 5740, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53345/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ae6e6a4a8cb9a1c64f640bd0a4eb5bda
+2026-05-19 01:54:30 [TestNG-test-Test OrangeHRM-3] ERROR ActionDriver - Unable to click element
+2026-05-19 18:47:17 [TestNG-test-Test OrangeHRM-1] ERROR BaseClass - This is a Error Message
+2026-05-19 18:47:17 [TestNG-test-Test OrangeHRM-1] FATAL BaseClass - This is a fatal message
+2026-05-19 18:47:19 [TestNG-test-Test OrangeHRM-3] ERROR BaseClass - This is a Error Message
+2026-05-19 18:47:19 [TestNG-test-Test OrangeHRM-3] FATAL BaseClass - This is a fatal message
+2026-05-19 18:47:20 [TestNG-test-Test OrangeHRM-3] ERROR ActionDriver - unable to describe the elementRange [0, 50) out of bounds for length 5
+2026-05-19 18:47:21 [TestNG-test-Test OrangeHRM-2] ERROR BaseClass - This is a Error Message
+2026-05-19 18:47:21 [TestNG-test-Test OrangeHRM-2] FATAL BaseClass - This is a fatal message
+2026-05-19 18:47:30 [TestNG-test-Test OrangeHRM-3] ERROR BaseClass - This is a Error Message
+2026-05-19 18:47:30 [TestNG-test-Test OrangeHRM-3] FATAL BaseClass - This is a fatal message
+2026-05-19 18:47:31 [TestNG-test-Test OrangeHRM-3] ERROR ActionDriver - unable to describe the elementRange [0, 50) out of bounds for length 5
+2026-05-19 18:47:33 [TestNG-test-Test OrangeHRM-3] ERROR ActionDriver - unable to describe the elementRange [0, 50) out of bounds for length 5
+2026-05-19 18:47:43 [TestNG-test-Test OrangeHRM-3] ERROR ActionDriver - unable to describe the elementno such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Logout']"}
+  (Session info: chrome=148.0.7778.168)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c0032d7ead79e053394a5017516e8b0c, findElement {using=xpath, value=//a[text()='Logout']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\kanishka Sharma\Ap...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59405}, goog:processID: 15976, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59405/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c0032d7ead79e053394a5017516e8b0c
+2026-05-19 18:48:24 [TestNG-test-Test OrangeHRM-3] ERROR ActionDriver - Unable to click element
+2026-05-19 18:51:57 [TestNG-test-Test OrangeHRM-3] ERROR BaseClass - This is a Error Message
+2026-05-19 18:51:57 [TestNG-test-Test OrangeHRM-3] FATAL BaseClass - This is a fatal message
+2026-05-19 18:51:57 [TestNG-test-Test OrangeHRM-1] ERROR BaseClass - This is a Error Message
+2026-05-19 18:51:58 [TestNG-test-Test OrangeHRM-1] FATAL BaseClass - This is a fatal message
+2026-05-19 18:52:00 [TestNG-test-Test OrangeHRM-2] ERROR BaseClass - This is a Error Message
+2026-05-19 18:52:00 [TestNG-test-Test OrangeHRM-2] FATAL BaseClass - This is a fatal message
+2026-05-19 18:52:01 [TestNG-test-Test OrangeHRM-3] ERROR ActionDriver - unable to describe the elementRange [0, 50) out of bounds for length 5
+2026-05-19 18:52:04 [TestNG-test-Test OrangeHRM-1] ERROR BaseClass - This is a Error Message
+2026-05-19 18:52:04 [TestNG-test-Test OrangeHRM-1] FATAL BaseClass - This is a fatal message
+2026-05-19 18:52:08 [TestNG-test-Test OrangeHRM-3] ERROR BaseClass - This is a Error Message
+2026-05-19 18:52:08 [TestNG-test-Test OrangeHRM-3] FATAL BaseClass - This is a fatal message
+2026-05-19 18:52:10 [TestNG-test-Test OrangeHRM-2] ERROR BaseClass - This is a Error Message
+2026-05-19 18:52:10 [TestNG-test-Test OrangeHRM-2] FATAL BaseClass - This is a fatal message
+2026-05-19 18:52:11 [TestNG-test-Test OrangeHRM-3] ERROR ActionDriver - unable to describe the elementRange [0, 50) out of bounds for length 5
+2026-05-19 18:52:16 [TestNG-test-Test OrangeHRM-3] ERROR BaseClass - This is a Error Message
+2026-05-19 18:52:16 [TestNG-test-Test OrangeHRM-3] FATAL BaseClass - This is a fatal message
+2026-05-19 18:52:17 [TestNG-test-Test OrangeHRM-3] ERROR ActionDriver - unable to describe the elementRange [0, 50) out of bounds for length 5
+2026-05-19 18:52:22 [TestNG-test-Test OrangeHRM-3] ERROR BaseClass - This is a Error Message
+2026-05-19 18:52:22 [TestNG-test-Test OrangeHRM-3] FATAL BaseClass - This is a fatal message
+2026-05-19 18:52:23 [TestNG-test-Test OrangeHRM-3] ERROR ActionDriver - unable to describe the elementRange [0, 50) out of bounds for length 5
+2026-05-19 18:52:23 [TestNG-test-Test OrangeHRM-3] ERROR ActionDriver - unable to describe the elementRange [0, 50) out of bounds for length 5
+2026-05-19 18:52:31 [TestNG-test-Test OrangeHRM-3] ERROR ActionDriver - unable to describe the elementRange [0, 50) out of bounds for length 5
+2026-05-19 18:52:33 [TestNG-test-Test OrangeHRM-3] ERROR ActionDriver - unable to describe the elementno such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Logout']"}
+  (Session info: chrome=148.0.7778.168)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [126b8663f477fccd28366242dc6bbbe9, findElement {value=//a[text()='Logout'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\kanishka Sharma\Ap...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56725}, goog:processID: 7616, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56725/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 126b8663f477fccd28366242dc6bbbe9
+2026-05-19 18:52:41 [TestNG-test-Test OrangeHRM-3] ERROR ActionDriver - unable to describe the elementno such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Logout']"}
+  (Session info: chrome=148.0.7778.168)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7be5cd91fd0682a50ca4911d20b89d89, findElement {using=xpath, value=//a[text()='Logout']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.167 (65db666ac2c..., userDataDir: C:\Users\kanishka Sharma\Ap...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54581}, goog:processID: 19240, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54581/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7be5cd91fd0682a50ca4911d20b89d89
+2026-05-19 18:53:14 [TestNG-test-Test OrangeHRM-3] ERROR ActionDriver - Unable to click element
+2026-05-19 18:53:22 [TestNG-test-Test OrangeHRM-3] ERROR ActionDriver - Unable to click element

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite OrangeHRM">
+<suite name="Suite OrangeHRM" parallel="classes" thread-count="5">
     <test verbose="2" preserve-order="true" name="Test OrangeHRM">
         <classes>
             <class name="com.orangehrm.DummyClass"></class>
             <class name="com.orangehrm.DummyClass2"></class>
             <class name="com.orangehrm.LoginPageTest"></class>
+            <class name="com.orangehrm.HomePageTest"></class>
         </classes>
     </test>
 </suite>
