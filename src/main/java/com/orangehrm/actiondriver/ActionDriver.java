@@ -1,6 +1,7 @@
 package com.orangehrm.actiondriver;
 
 import com.orangehrm.base.BaseClass;
+import com.orangehrm.utilities.ExtentManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -91,14 +92,17 @@ public class ActionDriver {
         }
     }
 
-    // Method to click
-    public void clickElement(By by){
+    // Method to click an element
+    public void clickElement(By by) {
+        String elementDescription = getElementDescription(by);
         try {
-            String elementDescription= getElementDescription(by);
+
             waitForElementToBeClickable(by);
             driver.findElement(by).click();
+            ExtentManager.logStep("clicked an element + elementDescription");
             logger.info("clicked an element" + elementDescription);
         } catch (Exception e) {
+            ExtentManager.logFailure(BaseClass.getDriver(), "Unable to click element", elementDescription + "Unable to click element" );
             logger.error("Unable to click element");
         }
     }
@@ -134,9 +138,12 @@ public class ActionDriver {
             String actualText= driver.findElement(by).getText();
             if(actualText.equals(expectedText)){
                 logger.info(" Texts are matching " + expectedText + " equals " + actualText);
+                ExtentManager.logStepsWithScreenshots(BaseClass.getDriver(),"compareText","Text Varified Sucessfully " + actualText +" equals "+ expectedText);
                 return true;
             }else{
                 logger.info(" Texts are not matching " + expectedText + " not equals " + actualText);
+                ExtentManager.logFailure(BaseClass.getDriver(),"compareText","Text Varified Failed " + actualText +" not equals "+ expectedText);
+
                 return false;
             }
         } catch (Exception e) {
@@ -151,10 +158,13 @@ public class ActionDriver {
         try {
             waitForElementToBeVisible(by);
             boolean isDisplayed= driver.findElement(by).isDisplayed();
+            ExtentManager.logStep("Element is displayed");
             logger.info("Element is displayed" + getElementDescription(by));
             return isDisplayed;
         } catch (Exception e) {
             logger.error("Unable to find element : " +e.getMessage());
+            ExtentManager.logFailure(BaseClass.getDriver(),"Element is displayed","Is Not Displayed");
+
             return false;
         }
 

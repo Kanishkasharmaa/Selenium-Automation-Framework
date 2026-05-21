@@ -1,5 +1,6 @@
 package com.orangehrm.base;
 import com.orangehrm.actiondriver.ActionDriver;
+import com.orangehrm.utilities.ExtentManager;
 import com.orangehrm.utilities.LoggerManager;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterMethod;
@@ -34,6 +35,9 @@ public class BaseClass {
         FileInputStream fis=new FileInputStream("src/main/resources/config.properties");
         prop.load(fis);
         logger.info("config.properties file is loaded");
+
+        //start the extent report
+        ExtentManager.getReporter();
     }
 
     @BeforeMethod
@@ -65,14 +69,18 @@ public class BaseClass {
         if(browser.equalsIgnoreCase("chrome")){
 //            driver=new ChromeDriver();
             driver.set(new ChromeDriver()); //new changes as per thread
+            ExtentManager.registerDriver(getDriver());
             logger.info("Chrome Driver Instance is created");
         }else if(browser.equalsIgnoreCase("firefox")){
 //            driver=new FirefoxDriver();
             driver.set(new FirefoxDriver()); //new changes as per thread
+            ExtentManager.registerDriver(getDriver());
             logger.info("Firefox Driver Instance is created");
         }else if(browser.equalsIgnoreCase("edge")){
 //            driver=new EdgeDriver();
             driver.set(new EdgeDriver()); //new changes as per thread
+            ExtentManager.registerDriver(getDriver());
+            logger.info("Edge Driver Instance is created");
         }else{
             throw new IllegalArgumentException("Browser Not Supported");
         }
@@ -130,6 +138,7 @@ public class BaseClass {
             logger.info("Web driver is closed");
             driver.remove();
             actionDriver.remove();
+            ExtentManager.endTest();
         } catch (Exception e) {
             System.out.println("Failed to quit the browser :" + e.getMessage());
         }

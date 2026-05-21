@@ -245,3 +245,47 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 Session ID: 7be5cd91fd0682a50ca4911d20b89d89
 2026-05-19 18:53:17 [TestNG-test-Test OrangeHRM-3] INFO  BaseClass - Web driver is closed
 2026-05-19 18:53:24 [TestNG-test-Test OrangeHRM-3] INFO  BaseClass - Web driver is closed
+2026-05-21 18:33:30 [main] INFO  BaseClass - config.properties file is loaded
+2026-05-21 18:33:59 [TestNG-test-Test OrangeHRM-4] INFO  BaseClass - Chrome Driver Instance is created
+2026-05-21 18:33:59 [TestNG-test-Test OrangeHRM-2] INFO  BaseClass - Chrome Driver Instance is created
+2026-05-21 18:33:59 [TestNG-test-Test OrangeHRM-1] INFO  BaseClass - Chrome Driver Instance is created
+2026-05-21 18:34:03 [TestNG-test-Test OrangeHRM-4] INFO  BaseClass - Web browser initialized and browser maximized
+2026-05-21 18:34:03 [TestNG-test-Test OrangeHRM-4] TRACE BaseClass - This is a Trace Message
+2026-05-21 18:34:03 [TestNG-test-Test OrangeHRM-4] DEBUG BaseClass - This is a Debug Message
+2026-05-21 18:34:03 [TestNG-test-Test OrangeHRM-4] WARN  BaseClass - This a warn message
+2026-05-21 18:34:03 [TestNG-test-Test OrangeHRM-4] INFO  BaseClass - ActionDriver initailized for thread36
+2026-05-21 18:34:03 [TestNG-test-Test OrangeHRM-1] INFO  BaseClass - Web browser initialized and browser maximized
+2026-05-21 18:34:03 [TestNG-test-Test OrangeHRM-1] TRACE BaseClass - This is a Trace Message
+2026-05-21 18:34:03 [TestNG-test-Test OrangeHRM-1] DEBUG BaseClass - This is a Debug Message
+2026-05-21 18:34:03 [TestNG-test-Test OrangeHRM-1] WARN  BaseClass - This a warn message
+2026-05-21 18:34:03 [TestNG-test-Test OrangeHRM-1] INFO  BaseClass - ActionDriver initailized for thread33
+2026-05-21 18:34:06 [TestNG-test-Test OrangeHRM-4] INFO  ActionDriver - Entered textElement with name  : username --> Admin
+2026-05-21 18:34:07 [TestNG-test-Test OrangeHRM-4] INFO  ActionDriver - Entered textElement with name  : password --> admin123
+2026-05-21 18:34:07 [TestNG-test-Test OrangeHRM-2] INFO  BaseClass - Web browser initialized and browser maximized
+2026-05-21 18:34:07 [TestNG-test-Test OrangeHRM-2] TRACE BaseClass - This is a Trace Message
+2026-05-21 18:34:07 [TestNG-test-Test OrangeHRM-2] DEBUG BaseClass - This is a Debug Message
+2026-05-21 18:34:07 [TestNG-test-Test OrangeHRM-2] WARN  BaseClass - This a warn message
+2026-05-21 18:34:07 [TestNG-test-Test OrangeHRM-2] INFO  BaseClass - ActionDriver initailized for thread34
+2026-05-21 18:34:07 [TestNG-test-Test OrangeHRM-4] INFO  ActionDriver - clicked an elementnull
+2026-05-21 18:34:08 [TestNG-test-Test OrangeHRM-1] INFO  BaseClass - Web driver is closed
+2026-05-21 18:34:09 [TestNG-test-Test OrangeHRM-3] INFO  BaseClass - Chrome Driver Instance is created
+2026-05-21 18:34:11 [TestNG-test-Test OrangeHRM-4] INFO  ActionDriver - Element is displayednull
+2026-05-21 18:34:12 [TestNG-test-Test OrangeHRM-2] INFO  BaseClass - Web driver is closed
+2026-05-21 18:34:15 [TestNG-test-Test OrangeHRM-3] INFO  BaseClass - Web browser initialized and browser maximized
+2026-05-21 18:34:15 [TestNG-test-Test OrangeHRM-3] TRACE BaseClass - This is a Trace Message
+2026-05-21 18:34:15 [TestNG-test-Test OrangeHRM-3] DEBUG BaseClass - This is a Debug Message
+2026-05-21 18:34:15 [TestNG-test-Test OrangeHRM-3] WARN  BaseClass - This a warn message
+2026-05-21 18:34:15 [TestNG-test-Test OrangeHRM-3] INFO  BaseClass - ActionDriver initailized for thread35
+2026-05-21 18:34:16 [TestNG-test-Test OrangeHRM-3] INFO  ActionDriver - Entered textElement with name  : username --> Admin
+2026-05-21 18:34:17 [TestNG-test-Test OrangeHRM-3] INFO  ActionDriver - Entered textElement with name  : password --> ad
+2026-05-21 18:34:17 [TestNG-test-Test OrangeHRM-3] INFO  ActionDriver - clicked an elementnull
+2026-05-21 18:34:19 [TestNG-test-Test OrangeHRM-3] INFO  ActionDriver -  Texts are matching Invalid credentials equals Invalid credentials
+2026-05-21 18:34:20 [TestNG-test-Test OrangeHRM-3] INFO  BaseClass - Web driver is closed
+2026-05-21 18:34:52 [TestNG-test-Test OrangeHRM-4] INFO  ActionDriver - Element is not clickable : Expected condition failed: waiting for element found by By.xpath: //a[text()='Logout'] to be clickable, but the element was not found: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()='Logout']"}.
+(tried for 30 seconds with 500 milliseconds interval)
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.168, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\kanishka Sharma\Ap...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64650}, goog:processID: 3840, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64650/devtoo..., se:cdpVersion: 148.0.7778.168, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1f63b7f1c43cca9affb7bfad1dc65d36
+2026-05-21 18:35:05 [TestNG-test-Test OrangeHRM-4] INFO  BaseClass - Web driver is closed
